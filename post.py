@@ -58,7 +58,7 @@ def pick_for_week(items: list, year: int, month: int, week_of_month: int, day_of
 TOMOMI_CTA = """
 <div style="background:#f0f4f8; border-left:4px solid #2c7bb6; padding:20px; margin:30px 0; border-radius:8px;">
   <p style="margin:0 0 8px 0; font-weight:bold; font-size:16px;">外壁・屋根塗装のご相談は智己美装へ</p>
-  <p style="margin:0 0 12px 0;">埼玉県川口市を中心に、丁寧な施工と適正価格でお客様の大切なお家を守ります。無料見積もり・現地調査実施中です。お気軽にお問い合わせください。</p>
+  <p style="margin:0 0 12px 0;">関東を中心に、丁寧な施工と適正価格でお客様の大切なお家を守ります。無料見積もり・現地調査実施中です。お気軽にお問い合わせください。</p>
   <a href="https://tomomi-biso.com" target="_blank" style="display:inline-block; background:#2c7bb6; color:#fff; padding:10px 24px; border-radius:4px; text-decoration:none; font-weight:bold;">智己美装 公式サイトを見る</a>
 </div>
 """
@@ -137,7 +137,7 @@ IMAGE_KEYWORDS_TIPS = [
 def generate_instagram_caption(model, title: str, excerpt: str, season: str, month: int) -> str:
     seasonal_info = SEASONAL_PAINT_INFO.get(month, "")
     prompt = f"""
-あなたは埼玉県川口市の外壁・屋根塗装会社「智己美装」のInstagram担当です。
+あなたは千葉県千葉市の外壁・屋根塗装会社「智己美装」のInstagram担当です。
 以下の情報をもとに、Instagramの投稿キャプションを日本語で書いてください。
 
 記事タイトル: {title}
@@ -151,7 +151,7 @@ def generate_instagram_caption(model, title: str, excerpt: str, season: str, mon
 - 智己美装は埼玉県川口市を中心とした地域密着の塗装会社であることを自然に1回だけ触れる
 - 絵文字を4〜6個使う（文中・文末に散りばめる）
 - 「詳しくはブログで👇」の一文を入れる
-- 最後にハッシュタグを改行して10個（#智己美装 #外壁塗装 #屋根塗装 #川口市 #埼玉塗装 必須、残り5個は記事内容に合わせて）
+- 最後にハッシュタグを改行して10個（#智己美装 #外壁塗装 #屋根塗装 #千葉市 #千葉塗装 必須、残り5個は記事内容に合わせて）
 - 全体200字以内（ハッシュタグ除く）
 - SNS的な話し言葉で
 
@@ -167,7 +167,7 @@ def generate_instagram_caption(model, title: str, excerpt: str, season: str, mon
             f"🏠 {title}\n\n"
             f"{excerpt}\n\n"
             f"詳しくはブログで👇\n\n"
-            f"#智己美装 #外壁塗装 #屋根塗装 #川口市 #埼玉塗装 #塗装工事 #リフォーム"
+            f"#智己美装 #外壁塗装 #屋根塗装 #千葉市 #千葉塗装 #塗装工事 #リフォーム"
         )
 
 
@@ -203,12 +203,12 @@ def generate_content(jst_now):
             f"- 具体的な費用相場・工期・耐用年数を数字で示す\n"
             f"- 業者選びの注意点を1段落で盛り込む\n"
             f"- 材料・工法の比較は<table>形式で表示\n"
-            f"- まとめの後に: 外壁・屋根のことでお困りの際は、埼玉県川口市の智己美装へお気軽にご相談ください。現地調査・見積もりは無料です。\n"
+            f"- まとめの後に: 外壁・屋根のことでお困りの際は、千葉県千葉市の智己美装へお気軽にご相談ください。現地調査・見積もりは無料です。\n"
             f"{COMMON_RULES}\n"
             f"出力形式:\n"
             f"【TITLE】タイトル\n"
             f"【EXCERPT】記事の要約（120字以内・SEO用）\n"
-            f"【TAGS】タグをカンマ区切りで5個（例: 外壁塗装,屋根塗装,川口市,埼玉,リフォーム）\n"
+            f"【TAGS】タグをカンマ区切りで5個（例: 外壁塗装,屋根塗装,千葉市,関東,リフォーム）\n"
             f"【CATEGORY_ID】1\n"
             f"【BODY】本文HTML\n"
         )
@@ -233,12 +233,12 @@ def generate_content(jst_now):
             f"- 工事の種類・費用・工期を具体的な数字で説明\n"
             f"- 放置するとどうなるか（リスク）を1段落で明記\n"
             f"- 工法の比較は<table>形式で表示\n"
-            f"- まとめの後に: 雨漏り・防水・補修工事のご相談は、埼玉県川口市の智己美装へ。無料診断・見積もり受付中です。\n"
+            f"- まとめの後に: 雨漏り・防水・補修工事のご相談は、千葉県千葉市の智己美装へ。無料診断・見積もり受付中です。\n"
             f"{COMMON_RULES}\n"
             f"出力形式:\n"
             f"【TITLE】タイトル\n"
             f"【EXCERPT】記事の要約（120字以内・SEO用）\n"
-            f"【TAGS】タグをカンマ区切りで5個（例: 防水工事,雨漏り,補修,川口市,埼玉）\n"
+            f"【TAGS】タグをカンマ区切りで5個（例: 防水工事,雨漏り,補修,千葉市,千葉）\n"
             f"【CATEGORY_ID】1\n"
             f"【BODY】本文HTML\n"
         )
@@ -262,12 +262,12 @@ def generate_content(jst_now):
             f"- H2見出し4つ、H3見出し3つ以上\n"
             f"- 製品・塗料の比較は<table>形式で（製品名・特徴・耐用年数・費用目安）\n"
             f"- 選び方の判断基準をol・liの番号付きリストで\n"
-            f"- まとめの後に: 塗料・色選びのご相談も智己美装にお任せください。埼玉県川口市を中心に無料でアドバイスいたします。\n"
+            f"- まとめの後に: 塗料・色選びのご相談も智己美装にお任せください。千葉県千葉市を中心に無料でアドバイスいたします。\n"
             f"{COMMON_RULES}\n"
             f"出力形式:\n"
             f"【TITLE】タイトル\n"
             f"【EXCERPT】記事の要約（120字以内・SEO用）\n"
-            f"【TAGS】タグをカンマ区切りで5個（例: 塗料,色選び,外壁,川口市,埼玉）\n"
+            f"【TAGS】タグをカンマ区切りで5個（例: 塗料,色選び,外壁,千葉市,千葉）\n"
             f"【CATEGORY_ID】1\n"
             f"【BODY】本文HTML\n"
         )
