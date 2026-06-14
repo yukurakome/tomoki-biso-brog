@@ -2,10 +2,9 @@ name: Auto WordPress Post - 智己美装
 
 on:
   schedule:
-    # 月・水・金 日本時間 朝8:00 (UTC 23:00) に実行
-    - cron: "0 23 * * 0"   # 月曜（JST）= 日曜UTC
-    - cron: "0 23 * * 2"   # 水曜（JST）= 火曜UTC
-    - cron: "0 23 * * 4"   # 金曜（JST）= 木曜UTC
+    # 火・木 日本時間 朝8:00 (UTC 23:00) に実行
+    - cron: "0 23 * * 1"   # 火曜（JST）= 月曜UTC
+    - cron: "0 23 * * 3"   # 木曜（JST）= 水曜UTC
   workflow_dispatch:
 
 jobs:
