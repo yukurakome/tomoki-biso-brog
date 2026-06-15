@@ -59,7 +59,7 @@ TOMOMI_CTA = """
 <div style="background:#f0f4f8; border-left:4px solid #2c7bb6; padding:20px; margin:30px 0; border-radius:8px;">
   <p style="margin:0 0 8px 0; font-weight:bold; font-size:16px;">外壁・屋根塗装のご相談は智己美装へ</p>
   <p style="margin:0 0 12px 0;">関東を中心に、丁寧な施工と適正価格でお客様の大切なお家を守ります。無料見積もり・現地調査実施中です。お気軽にお問い合わせください。</p>
-  <a href="https://tomomi-biso.com" target="_blank" style="display:inline-block; background:#2c7bb6; color:#fff; padding:10px 24px; border-radius:4px; text-decoration:none; font-weight:bold;">智己美装 公式サイトを見る</a>
+  <a href="https://tomoki-biso.com" target="_blank" style="display:inline-block; background:#2c7bb6; color:#fff; padding:10px 24px; border-radius:4px; text-decoration:none; font-weight:bold;">智己美装 公式サイトを見る</a>
 </div>
 """
 
